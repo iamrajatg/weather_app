@@ -12,6 +12,8 @@ const msg2 = document.querySelector('#msg2')
 
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
+    msg1.textContent = "Loading..."
+    msg2.textContent = ""
     const location = search.value
     if(location.length == 0)
         return msg1.textContent = "Please Enter A Location"
